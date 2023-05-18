@@ -16,3 +16,11 @@ const keys = document.querySelectorAll('.key');
 keys.forEach((key) => key.addEventListener('transitioned', removeTransition));
 
 window.addEventListener('keydown', playSound);
+
+<!-- 
+1. Add type annotations to variables and parameters
+2. Update event listeners with explicit event types
+
+In the updated code, 'TransitionEvent' and 'KeyboardEvent' are used as type annotations for the event parameters. The 'as' keyword is used to perform type assertions for 'querySelector' results to specify the correct element types.
+By adding these type annotations, the javascript code is transformed into typescript code
+ -->
